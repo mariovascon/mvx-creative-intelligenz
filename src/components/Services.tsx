@@ -1,31 +1,41 @@
-import { Globe, Palette, Smartphone, MessageSquare, Sparkles } from "lucide-react";
+import { TrendingUp, Palette, Smartphone, Bot, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import service1 from "@/assets/service-1.jpg";
+import service2 from "@/assets/service-2.jpg";
+import service3 from "@/assets/service-3.jpg";
+import service4 from "@/assets/service-4.jpg";
+import service5 from "@/assets/service-5.jpg";
 
 const services = [
   {
-    icon: Palette,
-    title: "Criação de Marcas e Identidades Visuais",
-    description: "Marcas memoráveis que comunicam propósito e conectam emocionalmente com seu público.",
+    icon: TrendingUp,
+    title: "Criação de Negócio Online",
+    description: "Transformamos ideias em negócios digitais lucrativos, com estratégia, tecnologia e design.",
+    image: service1,
   },
   {
-    icon: Globe,
-    title: "Desenvolvimento de Sites e Landing Pages Inteligentes",
-    description: "Experiências web que convertem visitantes em clientes, com design impecável e performance otimizada.",
+    icon: Palette,
+    title: "Criação de Marcas",
+    description: "Marcas memoráveis que comunicam propósito e conectam emocionalmente com seu público.",
+    image: service2,
   },
   {
     icon: Smartphone,
-    title: "Aplicativos e Soluções Digitais Sob Medida",
-    description: "Produtos digitais personalizados que resolvem problemas reais com tecnologia de ponta.",
+    title: "Aplicativos",
+    description: "Aplicativos mobile e web personalizados que resolvem problemas reais com tecnologia de ponta.",
+    image: service3,
   },
   {
-    icon: MessageSquare,
-    title: "Automação de Atendimento no WhatsApp e CRM",
-    description: "Fluxos inteligentes que automatizam conversas e transformam atendimento em experiência.",
+    icon: Bot,
+    title: "Automação de Atendimento com IA",
+    description: "Assistentes inteligentes que automatizam conversas e transformam atendimento em experiência.",
+    image: service4,
   },
   {
-    icon: Sparkles,
-    title: "Consultoria em Inteligência Artificial",
-    description: "Implementação estratégica de IA para otimizar processos e decisões de negócio.",
+    icon: Users,
+    title: "Consultoria",
+    description: "Consultoria estratégica em tecnologia e IA para otimizar processos e decisões de negócio.",
+    image: service5,
   },
 ];
 
@@ -46,16 +56,29 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="bg-card border-border hover:border-primary/50 transition-all duration-300 p-8 group hover:bg-glow cursor-pointer animate-scale-in"
+              className="bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden group hover:bg-glow cursor-pointer animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <service.icon className="h-12 w-12 text-primary mb-6 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+                <service.icon className="absolute bottom-4 left-4 h-12 w-12 text-primary group-hover:scale-110 transition-transform duration-300 drop-shadow-lg" />
+              </div>
+              
+              {/* Content */}
+              <div className="p-8">
+                <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </Card>
           ))}
         </div>
