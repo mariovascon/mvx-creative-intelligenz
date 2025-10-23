@@ -1,25 +1,47 @@
 import { Card } from "@/components/ui/card";
+import portfolio1 from "@/assets/portfolio-1.jpg";
+import portfolio2 from "@/assets/portfolio-2.jpg";
+import portfolio3 from "@/assets/portfolio-3.jpg";
+import portfolio4 from "@/assets/portfolio-4.jpg";
+import portfolio5 from "@/assets/portfolio-5.jpg";
+import portfolio6 from "@/assets/portfolio-6.jpg";
 
 const projects = [
   {
     title: "E-commerce Premium",
     category: "Desenvolvimento Web",
     description: "Plataforma completa com IA para recomendações personalizadas",
+    image: portfolio1,
   },
   {
     title: "App de Produtividade",
     category: "Design de Produto",
     description: "Interface minimalista com automações inteligentes",
+    image: portfolio2,
   },
   {
     title: "Sistema de CRM",
     category: "Automação & IA",
     description: "WhatsApp integrado com análise preditiva de vendas",
+    image: portfolio3,
   },
   {
     title: "Identidade Visual Tech",
     category: "Branding",
     description: "Marca completa para startup de tecnologia",
+    image: portfolio4,
+  },
+  {
+    title: "Dashboard Analytics",
+    category: "Data Visualization",
+    description: "Painel de análise de dados em tempo real",
+    image: portfolio5,
+  },
+  {
+    title: "Assistente Virtual",
+    category: "AI Integration",
+    description: "Chatbot inteligente para atendimento",
+    image: portfolio6,
   },
 ];
 
@@ -46,9 +68,14 @@ const Portfolio = () => {
               {/* Gradient background on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
-              {/* Image placeholder with gradient */}
-              <div className="relative h-64 bg-gradient-to-br from-surface to-background overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 group-hover:scale-110 transition-transform duration-700" />
+              {/* Image */}
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
               </div>
               
               {/* Content */}

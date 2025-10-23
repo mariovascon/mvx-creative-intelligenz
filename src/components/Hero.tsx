@@ -46,18 +46,24 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-foreground font-medium px-8 py-6 text-lg group bg-glow animate-pulse-glow"
+            asChild
           >
-            Comece seu projeto
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <a href="https://wa.me/5511982742665?text=Olá!%20Gostaria%20de%20iniciar%20um%20projeto%20com%20a%20MVX%20Studios" target="_blank" rel="noopener noreferrer">
+              Comece seu projeto
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </a>
           </Button>
           
           <Button 
             size="lg" 
             variant="outline" 
             className="border-primary/30 text-foreground hover:bg-primary/10 hover:border-primary px-8 py-6 text-lg group transition-all duration-300"
+            asChild
           >
-            <MessageCircle className="mr-2 h-5 w-5" />
-            Fale com a MVX no WhatsApp
+            <a href="https://wa.me/5511982742665?text=Olá!%20Vim%20do%20site%20da%20MVX%20Studios" target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Fale com a MVX no WhatsApp
+            </a>
           </Button>
         </div>
       </div>

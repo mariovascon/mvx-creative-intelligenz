@@ -24,9 +24,12 @@ const Contact = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-foreground font-medium px-10 py-7 text-lg group animate-pulse-glow"
+            asChild
           >
-            <MessageCircle className="mr-2 h-6 w-6" />
-            Vamos conversar no WhatsApp
+            <a href="https://wa.me/5511982742665?text=Olá!%20Vamos%20criar%20algo%20extraordinário%20juntos!" target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="mr-2 h-6 w-6" />
+              Vamos conversar no WhatsApp
+            </a>
           </Button>
         </div>
       </div>
