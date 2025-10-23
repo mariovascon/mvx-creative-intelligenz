@@ -3,29 +3,29 @@ import { Card } from "@/components/ui/card";
 
 const services = [
   {
-    icon: Globe,
-    title: "Sites e Landing Pages Inteligentes",
-    description: "Experiências web que convertem visitantes em clientes, com design impecável e performance otimizada.",
-  },
-  {
     icon: Palette,
-    title: "Branding e Identidade Visual",
+    title: "Criação de Marcas e Identidades Visuais",
     description: "Marcas memoráveis que comunicam propósito e conectam emocionalmente com seu público.",
   },
   {
+    icon: Globe,
+    title: "Desenvolvimento de Sites e Landing Pages Inteligentes",
+    description: "Experiências web que convertem visitantes em clientes, com design impecável e performance otimizada.",
+  },
+  {
     icon: Smartphone,
-    title: "Aplicativos e Soluções Digitais",
+    title: "Aplicativos e Soluções Digitais Sob Medida",
     description: "Produtos digitais personalizados que resolvem problemas reais com tecnologia de ponta.",
   },
   {
     icon: MessageSquare,
-    title: "Automação de Atendimento no WhatsApp",
+    title: "Automação de Atendimento no WhatsApp e CRM",
     description: "Fluxos inteligentes que automatizam conversas e transformam atendimento em experiência.",
   },
   {
     icon: Sparkles,
-    title: "Consultoria em IA e Fluxos Inteligentes",
-    description: "Implementação estratégica de inteligência artificial para otimizar processos e decisões de negócio.",
+    title: "Consultoria em Inteligência Artificial",
+    description: "Implementação estratégica de IA para otimizar processos e decisões de negócio.",
   },
 ];
 

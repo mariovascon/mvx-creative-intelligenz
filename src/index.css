@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* MVX Studios Design System - Dark Mode Premium */
-    --background: 240 15% 6%;
-    --foreground: 210 17% 96%;
+    /* MVX Studios Design System - Dark Cinematic */
+    --background: 240 18% 4%;
+    --foreground: 0 0% 96%;
 
-    --card: 240 9% 9%;
-    --card-foreground: 210 17% 96%;
+    --card: 240 16% 9%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 240 9% 9%;
-    --popover-foreground: 210 17% 96%;
+    --popover: 240 16% 9%;
+    --popover-foreground: 0 0% 96%;
 
     --primary: 211 100% 50%;
-    --primary-foreground: 210 17% 96%;
+    --primary-foreground: 0 0% 96%;
 
-    --secondary: 262 100% 72%;
-    --secondary-foreground: 210 17% 96%;
+    --secondary: 262 77% 70%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 240 9% 9%;
-    --muted-foreground: 240 3% 64%;
+    --muted: 240 16% 9%;
+    --muted-foreground: 0 0% 71%;
 
-    --accent: 262 100% 72%;
-    --accent-foreground: 210 17% 96%;
+    --accent: 262 77% 70%;
+    --accent-foreground: 0 0% 96%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 17% 96%;
+    --destructive-foreground: 0 0% 96%;
 
-    --border: 240 5% 15%;
-    --input: 240 5% 15%;
+    --border: 240 10% 11%;
+    --input: 240 10% 11%;
     --ring: 211 100% 50%;
 
     --radius: 0.75rem;
 
     /* Custom MVX Tokens */
-    --surface: 240 9% 9%;
-    --surface-elevated: 240 5% 12%;
+    --surface: 240 16% 9%;
+    --surface-elevated: 240 10% 11%;
     --glow-primary: 211 100% 50%;
-    --glow-secondary: 262 100% 72%;
+    --glow-secondary: 262 77% 70%;
   }
 }
 

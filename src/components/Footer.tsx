@@ -7,12 +7,12 @@ const Footer = () => {
             MVX Studios
           </div>
           
-          <p className="text-muted-foreground">
-            Inteligência Criativa. Feito com propósito e IA.
+          <p className="text-muted-foreground text-sm tracking-wider">
+            INTELIGÊNCIA CRIATIVA
           </p>
           
           <div className="text-sm text-muted-foreground pt-4">
-            © 2025 MVX Studios — Todos os direitos reservados
+            © 2025 MVX Studios — Inteligência Criativa. Feito com propósito e IA.
           </div>
         </div>
       </div>
